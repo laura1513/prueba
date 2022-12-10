@@ -2,13 +2,18 @@ package com.example.prueba;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private ImageView ivPersona;
+    private ImageView ivLibro;
+    private GridPane userDataPane;
+    private GridPane bookDataPane;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onIvPersonaClick() {
+        bookDataPane.setVisible(true);
     }
 }
